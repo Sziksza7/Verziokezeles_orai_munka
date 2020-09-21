@@ -31,6 +31,16 @@ namespace Verziókezelés
                 }
             }
             Console.WriteLine("A legnagyobb szám: "+max);
+
+            int min = szamok[0];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                if (szamok[i] <min)
+                {
+                    min = szamok[i];
+                }
+            }
+            Console.WriteLine("A legkisseb szám: " + min);
         }
     }
 }
