@@ -6,8 +6,9 @@ namespace Verziókezelés
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Kérem adjon meg 10 számot: ");
-            int[] szamok = new int[10];
+            Console.WriteLine("Kérem adjon meg x számot: ");
+            int x = int.Parse(Console.ReadLine());
+            int[] szamok = new int[x];
             for (int i = 0; i < szamok.Length; i++)
             {
                 Console.WriteLine("Adja meg a következő számot");
@@ -19,7 +20,7 @@ namespace Verziókezelés
             {
                 osszeg = osszeg + szamok[i];
             }
-            double atlag = osszeg / 10;
+            double atlag = osszeg / x;
             Console.WriteLine("A számok átlaga: "+atlag);
         }
     }
