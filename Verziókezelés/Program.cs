@@ -14,7 +14,13 @@ namespace Verziókezelés
                 int beertek = int.Parse(Console.ReadLine());
                 szamok[i] = beertek;
             }
-            
+            int osszeg=0;
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                osszeg = osszeg + szamok[i];
+            }
+            double atlag = osszeg / 10;
+            Console.WriteLine("A számok átlaga: "+atlag);
         }
     }
 }
