@@ -22,6 +22,15 @@ namespace Verziókezelés
             }
             double atlag = osszeg / x;
             Console.WriteLine("A számok átlaga: "+atlag);
+            int max=szamok[0];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                if (szamok[i]>max)
+                {
+                    max = szamok[i];
+                }
+            }
+            Console.WriteLine("A legnagyobb szám: "+max);
         }
     }
 }
